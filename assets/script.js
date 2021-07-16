@@ -19,12 +19,12 @@ function animeScroll() {
 
     // Animação dos buttons de acordo com onde o usuário estiver vendo.
     // Animação do button Sobre mim
-    if ((windowTop >= sobreMim.offsetTop)) {
+    if ((windowTop >= sobreMim.offsetTop - 500)) {
         buttons[0].classList.add('btn-header-animation')
         buttons[0].classList.add('about-me')
         buttons[0].style.color = "#be0a5b"
-    } 
-    if ((windowTop > projetos.offsetTop - 300) || (windowTop < sobreMim.offsetTop)){
+    }
+    if ((windowTop > projetos.offsetTop - 300) || (windowTop < sobreMim.offsetTop - 500)) {
         buttons[0].classList.remove('btn-header-animation')
         buttons[0].classList.remove('about-me')
         buttons[0].style.color = "white"
@@ -36,7 +36,7 @@ function animeScroll() {
         buttons[1].classList.add('project')
         buttons[1].style.color = "#be0a5b"
     }
-    if ((windowTop < sobreMim.offsetTop + 300) || (windowTop > projetos.offsetTop + 30)){
+    if ((windowTop < sobreMim.offsetTop + 300) || (windowTop > projetos.offsetTop + 30)) {
         buttons[1].classList.remove('btn-header-animation')
         buttons[1].classList.remove('project')
         buttons[1].style.color = "white"
@@ -47,7 +47,7 @@ function animeScroll() {
         buttons[2].classList.add('btn-header-animation')
         buttons[2].classList.add('contact')
         buttons[2].style.color = "#be0a5b"
-    } else{
+    } else {
         buttons[2].classList.remove('btn-header-animation')
         buttons[2].classList.remove('contact')
         buttons[2].style.color = "white"

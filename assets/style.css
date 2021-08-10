@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pangolin&family=Parisienne&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap");
 
 @keyframes text-reveal {
     from {
@@ -187,17 +186,14 @@ header div:nth-child(2) {
 /* Animações adicionadas pelo JavaScript a pseudoelementos */
 .btn-header-background.animation .btn-header.about-me::before {
     animation: text-reveal-y 1s forwards;
-
 }
 
 .btn-header-background.animation .btn-header.project::before {
     animation: text-reveal-y 1s forwards;
-
 }
 
 .btn-header-background.animation .btn-header.contact::before {
     animation: text-reveal-y 1s forwards;
-
 }
 
 /* ----------------------------------------------------------- */
@@ -488,50 +484,53 @@ header div:nth-child(2) {
 
 .projetos {
     margin: auto;
-    width: 80vw;
+    width: 70vw;
     margin-bottom: 5rem;
+
+    line-height: 2em;
+}
+
+.projetos p {
+    font-size: 17px;
 }
 
 .projetos > h2 {
-    display: flex;
-    justify-content: center;
-    margin: 2rem 0;
-    font-size: 2rem;
-}
-
-.projeto-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 1.1px;
-}
-
-.projeto-wrapper h2 {
     text-align: center;
-    margin-bottom: 0.5rem;
+    margin: 15px 0px;
+    font-size: 30px;
 }
 
-.projeto-wrapper span {
-    margin-left: 1rem;
-    margin-bottom: 2rem;
-}
-
-.projeto-wrapper p {
-    opacity: 0.9;
-    font-weight: 400;
-}
-
-.projeto-wrapper div:nth-child(1) {
-    width: 40%;
-    text-align: justify;
-}
-
-.projeto-wrapper div:nth-child(2) {
+.projeto-wrapper-left {
     display: flex;
     align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    margin-left: 2rem;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.projeto-wrapper-left div:nth-child(1) {
+    width: 50%;
+}
+
+.projeto-wrapper-left img {
+    border: 2px solid #000;
+}
+
+.projeto-wrapper-right img {
+    border: 2px solid #3485ff;
+    border-radius: 4px;
+}
+
+.projeto-wrapper-left h2 {
+    text-align: center;
+}
+
+.projeto-wrapper-right {
+    display: flex;
+    justify-content: space-around;
+}
+
+.projeto-wrapper-right div:nth-child(1) {
+    margin-right: 20px;
 }
 
 @media screen and (max-width: 650px) {
